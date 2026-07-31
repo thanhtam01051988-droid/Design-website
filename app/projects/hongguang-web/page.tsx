@@ -74,7 +74,7 @@ export default function HongguangWebProject() {
         ))}
         <footer className="case-footer">
           <a href={sitePath("/#work")}>← 返回所有项目</a>
-          <div><small>NEXT PROJECT</small><a href={sitePath("/#project-06")}>品宣·运营 ↗</a></div>
+          <div><small>NEXT PROJECT</small><a href={sitePath("/projects/brand-operations/")}>品宣·运营 ↗</a></div>
           <ProjectSwitcher current="05" />
         </footer>
       </div>

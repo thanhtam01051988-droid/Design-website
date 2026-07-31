@@ -6,7 +6,7 @@ const projectLinks = [
   { index: "03", title: "导学号学习灯 × 导学管家", href: "/projects/daoxue" },
   { index: "04", title: "宏光照明小程序", href: "/projects/hongguang-mini" },
   { index: "05", title: "宏光照明官网", href: "/projects/hongguang-web" },
-  { index: "06", title: "品宣·运营", href: "/#project-06" },
+  { index: "06", title: "品宣·运营", href: "/projects/brand-operations" },
 ];
 
 export default function ProjectSwitcher({ current }: { current: string }) {

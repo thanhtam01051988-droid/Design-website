@@ -100,7 +100,7 @@ const projects = [
   },
   {
     index: "06",
-    href: null,
+    href: "/projects/brand-operations",
     type: "BRAND / OPERATION & COMMUNICATION",
     title: "品宣·运营",
     description: "整合 IP 与插画、日常运营、节日活动及品牌传播物料，建立统一且可持续延展的视觉内容体系。",
