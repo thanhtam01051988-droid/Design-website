@@ -1778,6 +1778,19 @@ a {
   align-items: center;
   justify-content: center;
   gap: 12px;
+  cursor: grab;
+  touch-action: pan-y;
+  user-select: none;
+}
+
+.project-lightbox figure:active { cursor: grabbing; }
+
+.project-lightbox figure.is-next {
+  animation: project-lightbox-next .34s cubic-bezier(.22, .72, .25, 1);
+}
+
+.project-lightbox figure.is-previous {
+  animation: project-lightbox-previous .34s cubic-bezier(.22, .72, .25, 1);
 }
 
 .project-lightbox figure img {
@@ -1804,6 +1817,24 @@ a {
 @keyframes project-lightbox-in {
   from { opacity: 0; }
   to { opacity: 1; }
+}
+
+@keyframes project-lightbox-next {
+  from { opacity: 0; transform: translate3d(34px, 0, 0) scale(.985); }
+  to { opacity: 1; transform: translate3d(0, 0, 0) scale(1); }
+}
+
+@keyframes project-lightbox-previous {
+  from { opacity: 0; transform: translate3d(-34px, 0, 0) scale(.985); }
+  to { opacity: 1; transform: translate3d(0, 0, 0) scale(1); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project-lightbox,
+  .project-lightbox figure.is-next,
+  .project-lightbox figure.is-previous {
+    animation: none;
+  }
 }
 
 .case-images figcaption {
