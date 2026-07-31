@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "林墨 — UI / UX Designer",
-  description: "林墨的个人设计作品集：产品体验、视觉系统与精选项目。",
+  title: "徐月月 — UI Designer",
+  description: "徐月月的 UI 设计作品集：多端产品设计、AI 辅助工作流、工作经历与项目案例。",
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",

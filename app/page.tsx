@@ -1,94 +1,85 @@
 const capabilities = [
   {
     index: "01",
-    title: "产品体验设计",
-    description: "从复杂业务中识别关键问题，搭建清晰、可验证的产品体验。",
-    tags: ["UX Strategy", "Interaction", "Prototype"],
+    title: "多端视觉设计",
+    description: "可独立完成 App、小程序与 Web 端视觉设计，注重用户需求、体验与多端规范。",
+    tags: ["Figma", "Sketch", "Photoshop", "Illustrator"],
   },
   {
     index: "02",
-    title: "视觉与系统",
-    description: "建立一致而有识别度的视觉语言，让体验在不同触点自然延伸。",
-    tags: ["Visual Design", "Design System", "Brand"],
+    title: "AI 辅助工作流",
+    description: "将 AI 用于需求梳理、竞品分析、创意发散、视觉探索、素材生成与方案迭代。",
+    tags: ["AI Workflow", "Research", "Iteration", "Delivery"],
   },
   {
     index: "03",
-    title: "研究与协作",
-    description: "通过研究、数据与跨职能协作，让设计决策有据可循并顺利落地。",
-    tags: ["Research", "Workshop", "Delivery"],
+    title: "插画与动效",
+    description: "拥有八年美术绘画基础，能把控视觉风格，并结合插画、Blender 和 AE 提升落地效果。",
+    tags: ["Illustration", "Blender", "After Effects", "IP Design"],
+  },
+];
+
+const experiences = [
+  {
+    period: "2025.10—2026.07",
+    company: "深圳云创友翼科技有限公司",
+    role: "UI 设计师",
+    points: [
+      "参与校园项目申报管理系统 B 端与城投智慧办公 C 端设计，完成数据、用户和设计分析并推进方案落地。",
+      "使用 AI 辅助设计，跟进开发与前端效果，配合测试部提前测试、把关验收成果。",
+      "协助日常营销宣传设计，推进节假日线下物料与海报落地。",
+    ],
+  },
+  {
+    period: "2023.09—2025.08",
+    company: "西安双立智能科技",
+    role: "UI 设计师",
+    points: [
+      "基于产品需求、竞品与设计趋势分析建立 UI 界面规范，重构 C 端、B 端的视觉与功能架构。",
+      "结合 AI 更新 IP 形象与衍生插画，支持日常版本迭代、新功能模块与规范落地。",
+      "设计交互与动效，推动 C 端方案落地，同时完成 IP 海报等视觉内容。",
+    ],
+  },
+  {
+    period: "2021.07—2023.07",
+    company: "西安汇智科技有限公司",
+    role: "UI 设计师",
+    points: [
+      "负责企业官网、ERP 系统和小程序 UI 设计，参与需求分析、视觉方案、组件规范与多端适配。",
+      "参与设计评审、上线验收和后续体验优化，依据用户反馈持续调整方案。",
+      "协助完成海报、H5、Banner 与弹窗等宣传物料设计。",
+    ],
   },
 ];
 
 const projects = [
   {
-    number: "01",
-    category: "AI PRODUCT · 2026",
-    title: "Sora Studio",
-    subtitle: "让创意从灵感到成片，少一点阻力。",
-    description:
-      "面向创作者的 AI 影像工作台，重新梳理从提示词、素材到版本管理的核心路径。",
-    metric: "任务完成率 +28%",
-    className: "project-ink",
-    visual: (
-      <div className="studio-ui" aria-hidden="true">
-        <div className="studio-top"><i /><i /><i /><span>STUDIO / 01</span></div>
-        <div className="studio-stage">
-          <div className="studio-orb" />
-          <span className="stage-label">GENERATING FRAME</span>
-        </div>
-        <div className="studio-timeline">
-          <span /><span /><span /><span />
-        </div>
-      </div>
-    ),
+    index: "01",
+    type: "APP & WEB / B-END",
+    title: "大学项目申报管理系统",
+    description: "通过信息化手段改善学校项目库过度依赖人工、信息孤岛、沟通不畅与进度难跟踪的问题。",
+    responsibility: "负责系统 B 端 UI，包括图标、页面视觉与交互设计。",
   },
   {
-    number: "02",
-    category: "HEALTHCARE · 2025",
-    title: "Mori Health",
-    subtitle: "把长期健康，变成每天都能理解的小事。",
-    description:
-      "重构健康数据的阅读方式，用渐进式洞察帮助用户理解趋势并持续行动。",
-    metric: "次月留存 +19%",
-    className: "project-sage",
-    visual: (
-      <div className="health-ui" aria-hidden="true">
-        <div className="health-phone">
-          <div className="health-head"><span>Today</span><i /></div>
-          <div className="health-score">82<small>状态良好</small></div>
-          <div className="health-chart">
-            {[34, 52, 46, 72, 61, 78, 88].map((height, index) => (
-              <i key={index} style={{ height: `${height}%` }} />
-            ))}
-          </div>
-          <div className="health-row"><i /><span /><b /></div>
-          <div className="health-row"><i /><span /><b /></div>
-        </div>
-        <span className="health-note">DAY 24 / 30</span>
-      </div>
-    ),
+    index: "02",
+    type: "EDUTECH / SMART HARDWARE",
+    title: "导学号学习灯",
+    description: "面向学校学科专用教室，以错题采集、智能诊断、精准推送与效果追踪的路径，服务学生、教师和学校。",
+    responsibility: "负责 UI 更新、图标、IP 方案、素材库建立与 IP 海报插画。",
   },
   {
-    number: "03",
-    category: "MOBILITY · 2024",
-    title: "Flow Mobility",
-    subtitle: "一段更安静、更确定的城市出行。",
-    description:
-      "为多模式出行设计统一体验，连接路线规划、实时信息与服务触点。",
-    metric: "咨询量 -31%",
-    className: "project-blue",
-    visual: (
-      <div className="mobility-ui" aria-hidden="true">
-        <div className="map-grid" />
-        <div className="route-line"><i /><i /><i /></div>
-        <div className="trip-card">
-          <small>YOUR ROUTE</small>
-          <strong>18 min</strong>
-          <span>步行 4 分钟 · 地铁 2 站</span>
-        </div>
-        <div className="map-pin">A</div>
-      </div>
-    ),
+    index: "03",
+    type: "APP / FAMILY EDUCATION",
+    title: "导学管家",
+    description: "连接学生使用的导学灯与家长端，让家长查看每日学习记录和变化，并支持留言与学习权限管控。",
+    responsibility: "负责导学管家 UI 设计，包括图标与界面视觉设计。",
+  },
+  {
+    index: "04",
+    type: "APP & WEB / BRAND",
+    title: "宏光照明官网与小程序",
+    description: "为集研发、生产与销售于一体的 LED 照明企业设计官网与购物小程序，承载品牌、产品与发展历程。",
+    responsibility: "负责品牌视觉与官网视觉设计。",
   },
 ];
 
@@ -96,63 +87,53 @@ export default function Home() {
   return (
     <main>
       <header className="site-header">
-        <a className="monogram" href="#home" aria-label="返回首页">
-          LM<span>°</span>
-        </a>
+        <a className="monogram" href="#home" aria-label="返回首页">YY<span>°</span></a>
         <nav aria-label="主导航">
           <a href="#about">关于</a>
+          <a href="#experience">经历</a>
           <a href="#work">项目</a>
-          <a href="mailto:hello@example.com">联系</a>
         </nav>
-        <span className="availability"><i /> AVAILABLE FOR WORK</span>
+        <span className="availability"><i /> AVAILABLE NOW</span>
       </header>
 
       <section className="hero section-shell" id="home">
         <div className="hero-copy">
           <p className="hero-kicker">UI DESIGNER / PRODUCT EXPERIENCE</p>
-          <div className="hero-title" aria-label="林墨 UI Designer">
-            <h1>林墨</h1>
+          <div className="hero-title" aria-label="徐月月 UI Designer">
+            <h1>徐月月</h1>
             <p>UI DESIGNER</p>
           </div>
           <p className="hero-intro">
-            我关注复杂业务里的清晰表达，把信息架构、交互路径和视觉系统
-            整理成可落地、可复用、可持续迭代的产品体验。
+            专注 App、小程序与 Web 端体验设计，把需求、交互与视觉系统
+            整理成可落地、可复用、可持续迭代的产品方案。
           </p>
           <div className="hero-actions">
             <a className="primary-action" href="#work">查看项目 <span>↗</span></a>
-            <a className="secondary-action" href="#about"><span className="doc-icon">▤</span> 简历入口</a>
+            <a className="secondary-action" href="#experience"><span className="doc-icon">▤</span> 工作经历</a>
           </div>
-          <div className="hero-principles" aria-label="核心设计能力">
-            <div><small>FOCUS</small><strong>业务体验</strong></div>
-            <div><small>METHOD</small><strong>系统化设计</strong></div>
-            <div><small>OUTPUT</small><strong>高保真交付</strong></div>
+          <div className="hero-principles" aria-label="个人信息">
+            <div><small>EDUCATION</small><strong>西安理工大学</strong></div>
+            <div><small>MAJOR</small><strong>视觉传达设计</strong></div>
+            <div><small>STATUS</small><strong>离职 · 随时可到岗</strong></div>
           </div>
         </div>
 
         <div className="portrait-wrap">
-          <div className="portrait">
-            <div className="portrait-image" role="img" aria-label="UI 设计师林墨的个人形象照片" />
+          <div className="portrait resume-portrait">
+            <div className="portrait-image" role="img" aria-label="UI 设计师徐月月的简历照片" />
             <span className="portrait-frame" />
             <span className="portrait-folio">PORTFOLIO / 2026</span>
             <span className="portrait-mark">✦</span>
-            <span className="portrait-status">Available for selected design work <b>✧</b></span>
+            <span className="portrait-status">Available for UI design work <b>✧</b></span>
           </div>
         </div>
       </section>
 
       <section className="about section-shell" id="about">
         <div className="section-heading">
-          <p className="eyebrow">01 / CAPABILITIES</p>
-          <h2>
-            从问题出发，
-            <br />
-            让复杂变得<span className="muted">简单。</span>
-          </h2>
-          <p className="section-intro">
-            我在策略、体验与视觉之间工作，
-            <br />
-            让每个决策都服务于真实的人。
-          </p>
+          <p className="eyebrow">01 / PROFILE</p>
+          <h2>设计、技术与<span className="muted">落地。</span></h2>
+          <p className="section-intro">具备八年美术绘画基础，<br />并持续探索 AI 辅助设计工作流。</p>
         </div>
 
         <div className="capability-list">
@@ -162,57 +143,60 @@ export default function Home() {
               <div>
                 <h3>{item.title}</h3>
                 <p>{item.description}</p>
-                <div className="tags">
-                  {item.tags.map((tag) => <span key={tag}>{tag}</span>)}
-                </div>
+                <div className="tags">{item.tags.map((tag) => <span key={tag}>{tag}</span>)}</div>
               </div>
               <span className="cap-arrow">↗</span>
             </article>
           ))}
         </div>
 
-        <aside className="resume-callout">
-          <div>
-            <p className="eyebrow">MORE ABOUT ME</p>
-            <h3>想了解完整经历？</h3>
+        <aside className="resume-callout resume-facts">
+          <div><p className="eyebrow">CONTACT</p><h3>28 岁 · UI 设计师</h3></div>
+          <div className="contact-lines">
+            <a href="tel:18729335669">187 2933 5669</a>
+            <a href="mailto:18729335669@163.com">18729335669@163.com</a>
           </div>
-          <p>我的简历正在整理中，入口会在这里开放。</p>
-          <span className="resume-button" aria-label="简历即将开放">
-            查看简历 <small>即将开放</small>
-          </span>
+          <div className="resume-source-links">
+            <a href="/resume-page-01.png" target="_blank" rel="noreferrer">原简历 01 ↗</a>
+            <a href="/resume-page-02.png" target="_blank" rel="noreferrer">原简历 02 ↗</a>
+          </div>
         </aside>
+      </section>
+
+      <section className="experience section-shell" id="experience">
+        <div className="work-heading">
+          <div><p className="eyebrow">02 / EXPERIENCE</p><h2>工作经历</h2></div>
+          <p>2021—2026<br />UI / UX DESIGN</p>
+        </div>
+        <div className="experience-list">
+          {experiences.map((item, index) => (
+            <article className="experience-item" key={item.company}>
+              <span className="experience-count">0{index + 1}</span>
+              <div className="experience-main">
+                <div className="experience-title">
+                  <div><h3>{item.company}</h3><p>{item.role}</p></div>
+                  <time>{item.period}</time>
+                </div>
+                <ul>{item.points.map((point) => <li key={point}>{point}</li>)}</ul>
+              </div>
+            </article>
+          ))}
+        </div>
       </section>
 
       <section className="work section-shell" id="work">
         <div className="work-heading">
-          <div>
-            <p className="eyebrow">02 / SELECTED WORK</p>
-            <h2>近期项目</h2>
-          </div>
-          <p>精选 2024—2026<br />产品与体验设计案例</p>
+          <div><p className="eyebrow">03 / PROJECTS</p><h2>项目经历</h2></div>
+          <p>APP · WEB · B-END<br />EDUTECH · BRAND</p>
         </div>
-
-        <div className="project-list">
+        <div className="resume-project-grid">
           {projects.map((project) => (
-            <article className="project" key={project.number}>
-              <div className={`project-visual ${project.className}`}>
-                {project.visual}
-                <span className="project-number">{project.number}</span>
-              </div>
-              <div className="project-copy">
-                <p className="project-category">{project.category}</p>
-                <div className="project-title-row">
-                  <div>
-                    <h3>{project.title}</h3>
-                    <h4>{project.subtitle}</h4>
-                  </div>
-                  <span className="project-open">↗</span>
-                </div>
-                <div className="project-meta">
-                  <p>{project.description}</p>
-                  <strong>{project.metric}</strong>
-                </div>
-              </div>
+            <article className="resume-project-card" key={project.index}>
+              <div className="resume-project-top"><span>{project.index}</span><small>{project.type}</small></div>
+              <h3>{project.title}</h3>
+              <p>{project.description}</p>
+              <div className="project-responsibility"><small>MY ROLE</small><strong>{project.responsibility}</strong></div>
+              <span className="card-arrow">↗</span>
             </article>
           ))}
         </div>
@@ -221,12 +205,9 @@ export default function Home() {
       <footer className="site-footer section-shell">
         <div>
           <p className="eyebrow">LET&apos;S MAKE SOMETHING MEANINGFUL</p>
-          <h2>有好问题？<br /><a href="mailto:hello@example.com">一起聊聊。↗</a></h2>
+          <h2>有合适的设计机会？<br /><a href="mailto:18729335669@163.com">一起聊聊。↗</a></h2>
         </div>
-        <div className="footer-meta">
-          <span>SHANGHAI · CHINA</span>
-          <span>© 2026 LIN MO</span>
-        </div>
+        <div className="footer-meta"><span>XI&apos;AN · CHINA</span><span>© 2026 XU YUEYUE</span></div>
       </footer>
     </main>
   );
