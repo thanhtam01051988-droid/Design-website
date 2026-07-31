@@ -1515,7 +1515,7 @@ a {
 }
 
 .case-section {
-  margin-bottom: 130px;
+  margin-bottom: 32px;
   scroll-margin-top: 32px;
 }
 
@@ -1688,7 +1688,7 @@ a {
     min-height: 130px;
   }
 
-  .case-section { margin-bottom: 85px; }
+  .case-section { margin-bottom: 20px; }
 
   .case-section-header {
     margin-bottom: 28px;

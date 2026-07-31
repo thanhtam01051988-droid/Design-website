@@ -115,24 +115,14 @@ export default function DaoxueProject() {
       <div className="case-content">
         {sections.map((section) => (
           <section className="case-section" id={section.id} key={section.id}>
-            <header className="case-section-header">
-              <span>{section.number}</span>
-              <div>
-                <p>{section.label}</p>
-                <h2>{section.title}</h2>
-                <div className="case-rule" />
-                <p className="case-summary">{section.summary}</p>
-              </div>
-            </header>
             <div className="case-images">
-              {section.images.map((image, index) => (
+              {section.images.map((image) => (
                 <figure key={image.src}>
                   <img
                     src={image.src}
                     alt={image.alt}
                     loading={section.id === "overview" ? "eager" : "lazy"}
                   />
-                  <figcaption>{section.number}.{String(index + 1).padStart(2, "0")} / {section.label}</figcaption>
                 </figure>
               ))}
             </div>
