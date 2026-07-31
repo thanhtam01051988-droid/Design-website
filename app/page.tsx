@@ -55,6 +55,7 @@ const experiences = [
 const projects = [
   {
     index: "01",
+    href: "/projects/smart-office",
     type: "APP & WEB / B-END",
     title: "大学项目申报管理系统",
     description: "通过信息化手段改善学校项目库过度依赖人工、信息孤岛、沟通不畅与进度难跟踪的问题。",
@@ -62,6 +63,7 @@ const projects = [
   },
   {
     index: "02",
+    href: null,
     type: "EDUTECH / SMART HARDWARE",
     title: "导学号学习灯",
     description: "面向学校学科专用教室，以错题采集、智能诊断、精准推送与效果追踪的路径，服务学生、教师和学校。",
@@ -69,6 +71,7 @@ const projects = [
   },
   {
     index: "03",
+    href: null,
     type: "APP / FAMILY EDUCATION",
     title: "导学管家",
     description: "连接学生使用的导学灯与家长端，让家长查看每日学习记录和变化，并支持留言与学习权限管控。",
@@ -76,6 +79,7 @@ const projects = [
   },
   {
     index: "04",
+    href: null,
     type: "APP & WEB / BRAND",
     title: "宏光照明官网与小程序",
     description: "为集研发、生产与销售于一体的 LED 照明企业设计官网与购物小程序，承载品牌、产品与发展历程。",
@@ -192,6 +196,7 @@ export default function Home() {
         <div className="resume-project-grid">
           {projects.map((project) => (
             <article className="resume-project-card" key={project.index}>
+              {project.href && <a className="project-card-link" href={project.href} aria-label={`查看${project.title}完整项目`} />}
               <div className="resume-project-top"><span>{project.index}</span><small>{project.type}</small></div>
               <h3>{project.title}</h3>
               <p>{project.description}</p>
