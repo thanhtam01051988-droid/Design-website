@@ -4,7 +4,7 @@ const projectLinks = [
   { index: "01", title: "城投智慧办公", href: "/projects/smart-office" },
   { index: "02", title: "大学项目申报管理系统", href: "/#project-02" },
   { index: "03", title: "导学号学习灯 × 导学管家", href: "/projects/daoxue" },
-  { index: "04", title: "宏光照明小程序", href: "/#project-04" },
+  { index: "04", title: "宏光照明小程序", href: "/projects/hongguang-mini" },
   { index: "05", title: "宏光照明官网", href: "/projects/hongguang-web" },
   { index: "06", title: "品宣·运营", href: "/#project-06" },
 ];

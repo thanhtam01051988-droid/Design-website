@@ -84,7 +84,7 @@ const projects = [
   },
   {
     index: "04",
-    href: null,
+    href: "/projects/hongguang-mini",
     type: "C-END / E-COMMERCE",
     title: "宏光照明小程序",
     description: "面向轻奢灯具消费者的购物小程序，整合品牌内容、产品浏览、商品详情与购买路径。",

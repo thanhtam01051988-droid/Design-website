@@ -131,7 +131,7 @@ export default function DaoxueProject() {
         ))}
         <footer className="case-footer">
           <a href={sitePath("/#work")}>← 返回所有项目</a>
-          <div><small>NEXT PROJECT</small><a href={sitePath("/#project-04")}>宏光照明小程序 ↗</a></div>
+          <div><small>NEXT PROJECT</small><a href={sitePath("/projects/hongguang-mini/")}>宏光照明小程序 ↗</a></div>
           <ProjectSwitcher current="03" />
         </footer>
       </div>
