@@ -1419,14 +1419,22 @@ a {
   border-right: 1px solid var(--line);
 }
 
+.case-sidebar-top {
+  display: block;
+  color: inherit;
+  cursor: pointer;
+}
+
+.case-sidebar-top:hover {
+  color: inherit;
+}
+
 .case-back {
   display: inline-block;
   margin-bottom: 62px;
   color: #777872;
   font-size: 11px;
 }
-
-.case-back:hover { color: var(--ink); }
 
 .case-number {
   color: #858680;

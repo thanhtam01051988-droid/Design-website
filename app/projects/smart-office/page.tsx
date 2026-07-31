@@ -62,12 +62,12 @@ export default function SmartOfficeProject() {
   return (
     <main className="case-page">
       <aside className="case-sidebar" aria-label="项目页导航">
-        <div className="case-sidebar-top">
-          <a className="case-back" href="/">← 返回作品集</a>
+        <a className="case-sidebar-top" href="/#work" aria-label="返回作品集项目列表">
+          <span className="case-back">← 返回作品集</span>
           <span className="case-number">PROJECT / 01</span>
           <h1>城投<br />智慧办公</h1>
           <p>APP UI / UX · 2026</p>
-        </div>
+        </a>
         <nav className="case-anchor-nav" aria-label="项目章节">
           {sections.map((section) => <a href={`#${section.id}`} key={section.id}><span>{section.number}</span>{section.label}</a>)}
         </nav>
