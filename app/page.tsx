@@ -135,10 +135,10 @@ export default function Home() {
               <span className="doc-icon" aria-hidden="true">▤</span><span>简历入口</span>
             </a>
           </div>
-          <div className="hero-principles" aria-label="个人信息">
-            <div><small>EDUCATION</small><strong>西安理工大学</strong></div>
-            <div><small>MAJOR</small><strong>视觉传达设计</strong></div>
-            <div><small>STATUS</small><strong>离职 · 随时可到岗</strong></div>
+          <div className="hero-principles" aria-label="设计工作方式">
+            <div><small>FOCUS</small><strong>业务体验</strong></div>
+            <div><small>METHOD</small><strong>系统化设计</strong></div>
+            <div><small>OUTPUT</small><strong>高保真交付</strong></div>
           </div>
         </div>
 
