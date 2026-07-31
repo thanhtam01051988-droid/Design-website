@@ -1,23 +1,23 @@
 const capabilities = [
   {
+    icon: "▣",
+    title: "多端经验",
+    description: "具备 App、小程序、Web 与 B 端系统设计经验，熟悉不同平台规范与复杂业务场景。",
+  },
+  {
     icon: "⌁",
-    title: "体验梳理",
-    description: "拆解业务目标、用户路径和关键场景，把复杂流程转化为可理解、可决策的产品结构。",
+    title: "交互思维",
+    description: "从用户需求和业务目标出发梳理信息架构、交互路径与关键状态，并借助 AI 提升方案迭代效率。",
   },
   {
-    icon: "▦",
-    title: "界面设计",
-    description: "建立稳定的层级、节奏和状态表达，让功能密度与阅读体验在同一个界面里保持平衡。",
+    icon: "✦",
+    title: "设计落地",
+    description: "覆盖视觉方案、组件规范、原型与高保真交付，持续跟进开发效果、测试验收和体验优化。",
   },
   {
-    icon: "✥",
-    title: "组件系统",
-    description: "沉淀可复用组件、变量规范和交付说明，提升多端、多角色协作中的设计一致性。",
-  },
-  {
-    icon: "⌖",
-    title: "原型验证",
-    description: "用交互原型快速验证关键路径、异常状态和信息反馈，减少设计进入开发后的返工成本。",
+    icon: "◎",
+    title: "协同推进",
+    description: "与产品、前端和测试团队持续协作，通过设计评审、进度跟进与问题闭环推动方案上线。",
   },
 ];
 
@@ -108,57 +108,51 @@ const projects = [
 export default function Home() {
   return (
     <main>
-      <header className="site-header">
-        <a className="monogram" href="#home" aria-label="返回首页">YY<span>°</span></a>
+      <header className="site-header resume-site-header">
+        <a className="identity-brand" href="#home" aria-label="返回首页">
+          <span>YY</span>
+          <strong>徐月月<small>UI Designer</small></strong>
+        </a>
         <nav aria-label="主导航">
-          <a href="#about">关于</a>
-          <a href="#experience">经历</a>
+          <a href="#home">关于</a>
+          <a href="#about">优势</a>
+          <a href="/resume">简历</a>
           <a href="#work">项目</a>
         </nav>
-        <span className="availability"><i /> AVAILABLE NOW</span>
       </header>
 
-      <section className="hero section-shell" id="home">
-        <div className="hero-copy">
-          <p className="hero-kicker">UI DESIGNER / PRODUCT EXPERIENCE</p>
-          <div className="hero-title" aria-label="徐月月 UI Designer">
-            <h1>徐月月</h1>
-            <p>UI DESIGNER</p>
-          </div>
-          <p className="hero-intro">
-            专注 App、小程序与 Web 端体验设计，把需求、交互与视觉系统
-            整理成可落地、可复用、可持续迭代的产品方案。
+      <section className="hero resume-hero section-shell" id="home">
+        <div className="resume-hero-copy">
+          <p className="hero-kicker">RESUME / UI DESIGNER</p>
+          <h1>徐月月</h1>
+          <p className="resume-hero-intro">
+            5 年 UI 设计经验，覆盖 App、小程序、Web 与 B 端系统。
+            从需求分析到交互设计、视觉规范和项目落地，持续输出清晰、可复用、可迭代的产品体验。
           </p>
           <div className="hero-actions">
-            <a className="primary-action" href="/projects/smart-office">
-              <span>查看项目</span><span aria-hidden="true">↗</span>
+            <a className="primary-action" href="/resume">
+              <span>查看原简历</span><span aria-hidden="true">↗</span>
             </a>
-            <a className="secondary-action" href="/resume">
-              <span className="doc-icon" aria-hidden="true">▤</span><span>简历入口</span>
+            <a className="secondary-action" href="mailto:18729335669@163.com">
+              <span className="doc-icon" aria-hidden="true">✉</span><span>联系邮箱</span>
             </a>
-          </div>
-          <div className="hero-principles" aria-label="设计工作方式">
-            <div><small>FOCUS</small><strong>业务体验</strong></div>
-            <div><small>METHOD</small><strong>系统化设计</strong></div>
-            <div><small>OUTPUT</small><strong>高保真交付</strong></div>
           </div>
         </div>
 
-        <div className="portrait-wrap">
-          <div className="portrait resume-portrait">
-            <div className="portrait-image" role="img" aria-label="UI 设计师徐月月的简历照片" />
-            <span className="portrait-frame" />
-            <span className="portrait-folio">PORTFOLIO / 2026</span>
-            <span className="portrait-mark">✦</span>
-            <span className="portrait-status">Available for UI design work <b>✧</b></span>
-          </div>
+        <div className="resume-info-grid" aria-label="个人简历信息">
+          <div><small>求职意向</small><strong>UI 设计师</strong></div>
+          <div><small>工作状态</small><strong>离职 · 随时到岗</strong></div>
+          <div><small>所在城市</small><strong>西安</strong></div>
+          <div><small>联系方式</small><strong>187 2933 5669</strong></div>
+          <div><small>邮箱</small><strong>18729335669@163.com</strong></div>
+          <div><small>专业背景</small><strong>视觉传达设计</strong></div>
         </div>
       </section>
 
       <section className="about capability-section section-shell" id="about">
         <div className="capability-showcase-heading">
-          <p className="eyebrow">01 / CAPABILITIES</p>
-          <h2>从问题定义到界面落地的完整设计能力</h2>
+          <p className="eyebrow">STRENGTHS</p>
+          <h2>个人优势</h2>
         </div>
 
         <div className="capability-card-grid">
