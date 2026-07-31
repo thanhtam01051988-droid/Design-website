@@ -95,7 +95,7 @@ export default function DaoxueProject() {
       <aside className="case-sidebar" aria-label="项目页导航">
         <a className="case-sidebar-top" href="/#work" aria-label="返回作品集项目列表">
           <span className="case-back">← 返回作品集</span>
-          <span className="case-number">PROJECT / 01</span>
+          <span className="case-number">PROJECT / 03</span>
           <h1>导学号学习灯<br />× 导学管家</h1>
           <p>APP · SMART HARDWARE / 2024—2025</p>
         </a>
@@ -130,7 +130,7 @@ export default function DaoxueProject() {
         ))}
         <footer className="case-footer">
           <a href="/#work">← 返回所有项目</a>
-          <div><small>NEXT PROJECT</small><a href="/projects/smart-office">城投智慧办公 ↗</a></div>
+          <div><small>NEXT PROJECT</small><a href="/#project-04">宏光照明小程序 ↗</a></div>
         </footer>
       </div>
     </main>

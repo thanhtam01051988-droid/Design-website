@@ -55,14 +55,6 @@ const experiences = [
 const projects = [
   {
     index: "01",
-    href: "/projects/daoxue",
-    type: "C-END / EDUTECH",
-    title: "导学号学习灯 × 导学管家",
-    description: "连接学生使用的智能学习设备与家长端 App，串联错题采集、智能诊断、学习记录与家校沟通。",
-    responsibility: "负责双端 UI 更新、界面视觉、图标、IP 方案与插画素材库。",
-  },
-  {
-    index: "02",
     href: "/projects/smart-office",
     type: "C-END / SMART OFFICE",
     title: "城投智慧办公",
@@ -70,20 +62,28 @@ const projects = [
     responsibility: "负责 C 端 UI/UX、业务需求分析、AI 辅助设计工作流与组件化交付。",
   },
   {
-    index: "03",
-    href: null,
-    type: "C-END / E-COMMERCE",
-    title: "宏光照明小程序",
-    description: "面向轻奢灯具消费者的购物小程序，整合品牌内容、产品浏览、商品详情与购买路径。",
-    responsibility: "负责小程序视觉语言、核心购物页面与品牌一致性设计。",
-  },
-  {
-    index: "04",
+    index: "02",
     href: null,
     type: "B-END / PROJECT MANAGEMENT",
     title: "大学项目申报管理系统",
     description: "通过信息化手段改善学校项目库过度依赖人工、信息孤岛、沟通不畅与进度难跟踪的问题。",
     responsibility: "负责系统 B 端 UI，包括图标、页面视觉与交互设计。",
+  },
+  {
+    index: "03",
+    href: "/projects/daoxue",
+    type: "C-END / EDUTECH",
+    title: "导学号学习灯 × 导学管家",
+    description: "连接学生使用的智能学习设备与家长端 App，串联错题采集、智能诊断、学习记录与家校沟通。",
+    responsibility: "负责双端 UI 更新、界面视觉、图标、IP 方案与插画素材库。",
+  },
+  {
+    index: "04",
+    href: null,
+    type: "C-END / E-COMMERCE",
+    title: "宏光照明小程序",
+    description: "面向轻奢灯具消费者的购物小程序，整合品牌内容、产品浏览、商品详情与购买路径。",
+    responsibility: "负责小程序视觉语言、核心购物页面与品牌一致性设计。",
   },
   {
     index: "05",
@@ -96,26 +96,10 @@ const projects = [
   {
     index: "06",
     href: null,
-    type: "BRAND / IP & ILLUSTRATION",
-    title: "IP 与插画设计",
-    description: "基于产品定位更新 IP 形象与衍生插画，让视觉风格在产品界面、海报和日常内容中持续延伸。",
-    responsibility: "负责 IP 形象、表情与场景插画，并利用 AI 辅助风格探索和素材生成。",
-  },
-  {
-    index: "07",
-    href: null,
-    type: "BRAND / OPERATION",
-    title: "运营物料设计",
-    description: "面向日常运营、节日活动与用户触点，建立可快速延展的线上视觉物料体系。",
-    responsibility: "负责活动主视觉、Banner、弹窗、H5 与社媒内容的设计和落地。",
-  },
-  {
-    index: "08",
-    href: null,
-    type: "BRAND / COMMUNICATION",
-    title: "品宣物料设计",
-    description: "围绕企业品牌与产品价值，将复杂信息整理为清晰、一致的对外传播内容。",
-    responsibility: "负责宣传册、产品海报、展示物料和线下延展设计。",
+    type: "BRAND / OPERATION & COMMUNICATION",
+    title: "品宣·运营",
+    description: "整合 IP 与插画、日常运营、节日活动及品牌传播物料，建立统一且可持续延展的视觉内容体系。",
+    responsibility: "负责 IP 形象与插画、活动主视觉、Banner、H5、宣传册、产品海报及线下物料设计。",
   },
 ];
 
@@ -144,7 +128,7 @@ export default function Home() {
             整理成可落地、可复用、可持续迭代的产品方案。
           </p>
           <div className="hero-actions">
-            <a className="primary-action" href="/projects/daoxue">
+            <a className="primary-action" href="/projects/smart-office">
               <span>查看项目</span><span aria-hidden="true">↗</span>
             </a>
             <a className="secondary-action" href="#experience">
@@ -230,13 +214,13 @@ export default function Home() {
           <p>C-END · B-END<br />BRAND VISUAL</p>
         </div>
         <div className="project-category-summary">
-          <div><small>C 端项目 / 03</small><strong>导学号与导学管家<br />城投智慧办公<br />宏光照明小程序</strong></div>
-          <div><small>B 端项目 / 02</small><strong>大学项目申报系统<br />宏光照明官网</strong></div>
-          <div><small>品牌视觉 / 03</small><strong>IP 与插画设计<br />运营物料设计<br />品宣物料设计</strong></div>
+          <div><small>核心项目 / 03</small><strong>城投智慧办公<br />大学项目申报系统<br />导学号与导学管家</strong></div>
+          <div><small>宏光项目 / 02</small><strong>宏光照明小程序<br />宏光照明官网</strong></div>
+          <div><small>品牌视觉 / 01</small><strong>品宣·运营</strong></div>
         </div>
         <div className="resume-project-grid">
           {projects.map((project) => (
-            <article className="resume-project-card" key={project.index}>
+            <article className="resume-project-card" id={`project-${project.index}`} key={project.index}>
               {project.href && <a className="project-card-link" href={project.href} aria-label={`查看${project.title}完整项目`} />}
               <div className="resume-project-top"><span>{project.index}</span><small>{project.type}</small></div>
               <h3>{project.title}</h3>
