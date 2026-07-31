@@ -144,8 +144,12 @@ export default function Home() {
             整理成可落地、可复用、可持续迭代的产品方案。
           </p>
           <div className="hero-actions">
-            <a className="primary-action" href="#work">查看项目 <span>↗</span></a>
-            <a className="secondary-action" href="#experience"><span className="doc-icon">▤</span> 工作经历</a>
+            <a className="primary-action" href="/projects/daoxue">
+              <span>查看项目</span><span aria-hidden="true">↗</span>
+            </a>
+            <a className="secondary-action" href="#experience">
+              <span className="doc-icon" aria-hidden="true">▤</span><span>工作经历</span>
+            </a>
           </div>
           <div className="hero-principles" aria-label="个人信息">
             <div><small>EDUCATION</small><strong>西安理工大学</strong></div>

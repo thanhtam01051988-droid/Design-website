@@ -177,7 +177,7 @@ a {
 
 .primary-action,
 .secondary-action {
-  min-height: 48px;
+  height: 48px;
   padding: 0 22px;
   display: inline-flex;
   gap: 14px;
@@ -187,7 +187,16 @@ a {
   border-radius: 999px;
   font-size: 12px;
   font-weight: 620;
+  line-height: 1;
   transition: transform .25s ease, background .25s ease, color .25s ease;
+}
+
+.primary-action > span,
+.secondary-action > span {
+  display: inline-flex;
+  align-items: center;
+  height: 1em;
+  line-height: 1;
 }
 
 .primary-action {
@@ -1598,7 +1607,12 @@ a {
   border-top: 1px solid var(--line);
 }
 
-.case-footer > a { font-size: 12px; }
+.case-footer > a {
+  display: inline-flex;
+  align-items: center;
+  font-size: 12px;
+  line-height: 1;
+}
 
 .case-footer div {
   display: flex;
@@ -1619,7 +1633,10 @@ a {
 
 .case-footer div > a {
   margin-top: 10px;
+  display: inline-flex;
+  align-items: center;
   font-size: 18px;
+  line-height: 1;
 }
 
 .case-footer div > a:hover {
