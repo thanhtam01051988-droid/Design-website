@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ProjectSwitcher from "../project-switcher";
 
 export const metadata: Metadata = {
   title: "城投智慧办公 — 徐月月",
@@ -63,9 +64,8 @@ export default function SmartOfficeProject() {
     <main className="case-page">
       <aside className="case-sidebar" aria-label="项目页导航">
         <a className="case-sidebar-top" href="/#work" aria-label="返回作品集项目列表">
-          <span className="case-back">← 返回作品集</span>
+          <span className="case-back"><b aria-hidden="true">⌂</b>返回首页</span>
           <span className="case-number">PROJECT / 01</span>
-          <h1>城投<br />智慧办公</h1>
           <p>APP UI / UX · 2026</p>
         </a>
         <nav className="case-anchor-nav" aria-label="项目章节">
@@ -92,6 +92,7 @@ export default function SmartOfficeProject() {
         <footer className="case-footer">
           <a href="/#work">← 返回所有项目</a>
           <div><small>NEXT PROJECT</small><a href="/#project-02">大学项目申报管理系统 ↗</a></div>
+          <ProjectSwitcher current="01" />
         </footer>
       </div>
     </main>

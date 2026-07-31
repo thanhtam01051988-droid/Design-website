@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ProjectSwitcher from "../project-switcher";
 
 export const metadata: Metadata = {
   title: "导学号学习灯 × 导学管家 — 徐月月",
@@ -94,9 +95,8 @@ export default function DaoxueProject() {
     <main className="case-page">
       <aside className="case-sidebar" aria-label="项目页导航">
         <a className="case-sidebar-top" href="/#work" aria-label="返回作品集项目列表">
-          <span className="case-back">← 返回作品集</span>
+          <span className="case-back"><b aria-hidden="true">⌂</b>返回首页</span>
           <span className="case-number">PROJECT / 03</span>
-          <h1>导学号学习灯<br />× 导学管家</h1>
           <p>APP · SMART HARDWARE / 2024—2025</p>
         </a>
         <nav className="case-anchor-nav" aria-label="项目章节">
@@ -131,6 +131,7 @@ export default function DaoxueProject() {
         <footer className="case-footer">
           <a href="/#work">← 返回所有项目</a>
           <div><small>NEXT PROJECT</small><a href="/#project-04">宏光照明小程序 ↗</a></div>
+          <ProjectSwitcher current="03" />
         </footer>
       </div>
     </main>
