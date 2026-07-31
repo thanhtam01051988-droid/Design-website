@@ -132,7 +132,7 @@ export default function Home() {
               <span>查看项目</span><span aria-hidden="true">↗</span>
             </a>
             <a className="secondary-action" href="#experience">
-              <span className="doc-icon" aria-hidden="true">▤</span><span>工作经历</span>
+              <span className="doc-icon" aria-hidden="true">▤</span><span>简历入口</span>
             </a>
           </div>
           <div className="hero-principles" aria-label="个人信息">
