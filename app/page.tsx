@@ -1,4 +1,5 @@
 import { BadgeCheck, PanelsTopLeft, UsersRound, Workflow } from "lucide-react";
+import { sitePath } from "./site-path";
 
 const capabilities = [
   {
@@ -118,7 +119,7 @@ export default function Home() {
         <nav aria-label="主导航">
           <a href="#home">关于</a>
           <a href="#about">优势</a>
-          <a href="/resume">简历</a>
+          <a href={sitePath("/resume/")}>简历</a>
           <a href="#work">项目</a>
         </nav>
       </header>
@@ -132,7 +133,7 @@ export default function Home() {
             从需求分析到交互设计、视觉规范和项目落地，持续输出清晰、可复用、可迭代的产品体验。
           </p>
           <div className="hero-actions">
-            <a className="primary-action" href="/resume">
+            <a className="primary-action" href={sitePath("/resume/")}>
               <span>查看原简历</span><span aria-hidden="true">↗</span>
             </a>
             <a className="secondary-action" href="mailto:18729335669@163.com">
@@ -202,7 +203,7 @@ export default function Home() {
         <div className="resume-project-grid">
           {projects.map((project) => (
             <article className="resume-project-card" id={`project-${project.index}`} key={project.index}>
-              {project.href && <a className="project-card-link" href={project.href} aria-label={`查看${project.title}完整项目`} />}
+              {project.href && <a className="project-card-link" href={sitePath(`${project.href}/`)} aria-label={`查看${project.title}完整项目`} />}
               <div className="resume-project-top"><span>{project.index}</span><small>{project.type}</small></div>
               <h3>{project.title}</h3>
               <p>{project.description}</p>

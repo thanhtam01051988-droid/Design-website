@@ -1,3 +1,5 @@
+import { sitePath } from "../site-path";
+
 const projectLinks = [
   { index: "01", title: "城投智慧办公", href: "/projects/smart-office" },
   { index: "02", title: "大学项目申报管理系统", href: "/#project-02" },
@@ -18,7 +20,7 @@ export default function ProjectSwitcher({ current }: { current: string }) {
         {projectLinks.map((project) => (
           <a
             className={project.index === current ? "is-current" : undefined}
-            href={project.href}
+            href={sitePath(project.href.endsWith("daoxue") || project.href.endsWith("smart-office") ? `${project.href}/` : project.href)}
             aria-current={project.index === current ? "page" : undefined}
             key={project.index}
           >

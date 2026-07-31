@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ProjectSwitcher from "../project-switcher";
+import { sitePath } from "../../site-path";
 
 export const metadata: Metadata = {
   title: "城投智慧办公 — 徐月月",
@@ -63,7 +64,7 @@ export default function SmartOfficeProject() {
   return (
     <main className="case-page">
       <aside className="case-sidebar" aria-label="项目页导航">
-        <a className="case-sidebar-top" href="/#work" aria-label="返回作品集项目列表">
+        <a className="case-sidebar-top" href={sitePath("/#work")} aria-label="返回作品集项目列表">
           <span className="case-back"><b aria-hidden="true">⌂</b>返回首页</span>
           <span className="case-number">PROJECT / 01</span>
           <p>APP UI / UX · 2026</p>
@@ -83,15 +84,15 @@ export default function SmartOfficeProject() {
             <div className="case-images">
               {section.images.map((image) => (
                 <figure key={image.src}>
-                  <img src={image.src} alt={image.alt} loading={section.id === "overview" ? "eager" : "lazy"} />
+                  <img src={sitePath(image.src)} alt={image.alt} loading={section.id === "overview" ? "eager" : "lazy"} />
                 </figure>
               ))}
             </div>
           </section>
         ))}
         <footer className="case-footer">
-          <a href="/#work">← 返回所有项目</a>
-          <div><small>NEXT PROJECT</small><a href="/#project-02">大学项目申报管理系统 ↗</a></div>
+          <a href={sitePath("/#work")}>← 返回所有项目</a>
+          <div><small>NEXT PROJECT</small><a href={sitePath("/#project-02")}>大学项目申报管理系统 ↗</a></div>
           <ProjectSwitcher current="01" />
         </footer>
       </div>
