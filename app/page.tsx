@@ -1,21 +1,23 @@
 const capabilities = [
   {
-    index: "01",
-    title: "多端视觉设计",
-    description: "可独立完成 App、小程序与 Web 端视觉设计，注重用户需求、体验与多端规范。",
-    tags: ["Figma", "Sketch", "Photoshop", "Illustrator"],
+    icon: "⌁",
+    title: "体验梳理",
+    description: "拆解业务目标、用户路径和关键场景，把复杂流程转化为可理解、可决策的产品结构。",
   },
   {
-    index: "02",
-    title: "AI 辅助工作流",
-    description: "将 AI 用于需求梳理、竞品分析、创意发散、视觉探索、素材生成与方案迭代。",
-    tags: ["AI Workflow", "Research", "Iteration", "Delivery"],
+    icon: "▦",
+    title: "界面设计",
+    description: "建立稳定的层级、节奏和状态表达，让功能密度与阅读体验在同一个界面里保持平衡。",
   },
   {
-    index: "03",
-    title: "插画与动效",
-    description: "拥有八年美术绘画基础，能把控视觉风格，并结合插画、Blender 和 AE 提升落地效果。",
-    tags: ["Illustration", "Blender", "After Effects", "IP Design"],
+    icon: "✥",
+    title: "组件系统",
+    description: "沉淀可复用组件、变量规范和交付说明，提升多端、多角色协作中的设计一致性。",
+  },
+  {
+    icon: "⌖",
+    title: "原型验证",
+    description: "用交互原型快速验证关键路径、异常状态和信息反馈，减少设计进入开发后的返工成本。",
   },
 ];
 
@@ -153,38 +155,21 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="about section-shell" id="about">
-        <div className="section-heading">
-          <p className="eyebrow">01 / PROFILE</p>
-          <h2>设计、技术与<span className="muted">落地。</span></h2>
-          <p className="section-intro">具备八年美术绘画基础，<br />并持续探索 AI 辅助设计工作流。</p>
+      <section className="about capability-section section-shell" id="about">
+        <div className="capability-showcase-heading">
+          <p className="eyebrow">01 / CAPABILITIES</p>
+          <h2>从问题定义到界面落地的完整设计能力</h2>
         </div>
 
-        <div className="capability-list">
+        <div className="capability-card-grid">
           {capabilities.map((item) => (
-            <article className="capability" key={item.index}>
-              <span className="cap-index">{item.index}</span>
-              <div>
-                <h3>{item.title}</h3>
-                <p>{item.description}</p>
-                <div className="tags">{item.tags.map((tag) => <span key={tag}>{tag}</span>)}</div>
-              </div>
-              <span className="cap-arrow">↗</span>
+            <article className="capability-card" key={item.title}>
+              <span className="capability-icon" aria-hidden="true">{item.icon}</span>
+              <h3>{item.title}</h3>
+              <p>{item.description}</p>
             </article>
           ))}
         </div>
-
-        <aside className="resume-callout resume-facts">
-          <div><p className="eyebrow">CONTACT</p><h3>28 岁 · UI 设计师</h3></div>
-          <div className="contact-lines">
-            <a href="tel:18729335669">187 2933 5669</a>
-            <a href="mailto:18729335669@163.com">18729335669@163.com</a>
-          </div>
-          <div className="resume-source-links">
-            <a href="/resume-page-01.png" target="_blank" rel="noreferrer">原简历 01 ↗</a>
-            <a href="/resume-page-02.png" target="_blank" rel="noreferrer">原简历 02 ↗</a>
-          </div>
-        </aside>
       </section>
 
       <section className="experience section-shell" id="experience">
