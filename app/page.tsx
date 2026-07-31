@@ -193,8 +193,8 @@ export default function Home() {
           <p>C-END · B-END<br />BRAND VISUAL</p>
         </div>
         <div className="project-category-summary">
-          <div><small>核心项目 / 03</small><strong>城投智慧办公<br />大学项目申报系统<br />导学号与导学管家</strong></div>
-          <div><small>宏光项目 / 02</small><strong>宏光照明小程序<br />宏光照明官网</strong></div>
+          <div><small>C 端项目 / 03</small><strong>城投智慧办公<br />导学号与导学管家<br />宏光照明小程序</strong></div>
+          <div><small>B 端项目 / 02</small><strong>大学项目申报系统<br />宏光照明官网</strong></div>
           <div><small>品牌视觉 / 01</small><strong>品宣·运营</strong></div>
         </div>
         <div className="resume-project-grid">
