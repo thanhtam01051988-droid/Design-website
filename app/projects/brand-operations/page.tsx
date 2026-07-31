@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ProjectSwitcher from "../project-switcher";
+import ProjectImageLightbox from "../project-image-lightbox";
 import { sitePath } from "../../site-path";
 
 export const metadata: Metadata = {
@@ -87,6 +88,7 @@ export default function BrandOperationsProject() {
             </div>
           </section>
         ))}
+        <ProjectImageLightbox />
         <footer className="case-footer">
           <a href={sitePath("/#work")}>← 返回所有项目</a>
           <div><small>NEXT PROJECT</small><a href={sitePath("/projects/smart-office/")}>城投智慧办公 ↗</a></div>

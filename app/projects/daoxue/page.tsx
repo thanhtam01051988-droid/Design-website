@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ProjectSwitcher from "../project-switcher";
+import ProjectImageLightbox from "../project-image-lightbox";
 import { sitePath } from "../../site-path";
 
 export const metadata: Metadata = {
@@ -129,6 +130,7 @@ export default function DaoxueProject() {
             </div>
           </section>
         ))}
+        <ProjectImageLightbox />
         <footer className="case-footer">
           <a href={sitePath("/#work")}>← 返回所有项目</a>
           <div><small>NEXT PROJECT</small><a href={sitePath("/projects/hongguang-mini/")}>宏光照明小程序 ↗</a></div>
