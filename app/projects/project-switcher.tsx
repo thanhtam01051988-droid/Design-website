@@ -5,7 +5,7 @@ const projectLinks = [
   { index: "02", title: "大学项目申报管理系统", href: "/#project-02" },
   { index: "03", title: "导学号学习灯 × 导学管家", href: "/projects/daoxue" },
   { index: "04", title: "宏光照明小程序", href: "/#project-04" },
-  { index: "05", title: "宏光照明官网", href: "/#project-05" },
+  { index: "05", title: "宏光照明官网", href: "/projects/hongguang-web" },
   { index: "06", title: "品宣·运营", href: "/#project-06" },
 ];
 
@@ -20,7 +20,7 @@ export default function ProjectSwitcher({ current }: { current: string }) {
         {projectLinks.map((project) => (
           <a
             className={project.index === current ? "is-current" : undefined}
-            href={sitePath(project.href.endsWith("daoxue") || project.href.endsWith("smart-office") ? `${project.href}/` : project.href)}
+            href={sitePath(project.href.startsWith("/projects/") ? `${project.href}/` : project.href)}
             aria-current={project.index === current ? "page" : undefined}
             key={project.index}
           >

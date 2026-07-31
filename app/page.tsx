@@ -92,7 +92,7 @@ const projects = [
   },
   {
     index: "05",
-    href: null,
+    href: "/projects/hongguang-web",
     type: "B-END / CORPORATE WEB",
     title: "宏光照明官网",
     description: "为集研发、生产与销售于一体的 LED 照明企业搭建官方网站，承载品牌、产品与发展历程。",
