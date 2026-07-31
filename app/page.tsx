@@ -131,7 +131,7 @@ export default function Home() {
             <a className="primary-action" href="/projects/smart-office">
               <span>查看项目</span><span aria-hidden="true">↗</span>
             </a>
-            <a className="secondary-action" href="#experience">
+            <a className="secondary-action" href="/resume">
               <span className="doc-icon" aria-hidden="true">▤</span><span>简历入口</span>
             </a>
           </div>
