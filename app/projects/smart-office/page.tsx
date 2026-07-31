@@ -101,7 +101,7 @@ export default function SmartOfficeProject() {
         ))}
         <footer className="case-footer">
           <a href="/">← 返回所有项目</a>
-          <div><small>NEXT PROJECT</small><span>导学号学习灯 ↗</span></div>
+          <div><small>NEXT PROJECT</small><a href="/projects/daoxue">导学号学习灯 ↗</a></div>
         </footer>
       </div>
     </main>

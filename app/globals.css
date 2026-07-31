@@ -1609,6 +1609,16 @@ a {
   font-size: 18px;
 }
 
+.case-footer div > a {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.case-footer div > a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
 @media (max-width: 900px) {
   .case-page {
     width: 100%;

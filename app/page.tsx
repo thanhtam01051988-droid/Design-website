@@ -55,7 +55,7 @@ const experiences = [
 const projects = [
   {
     index: "01",
-    href: null,
+    href: "/projects/daoxue",
     type: "C-END / EDUTECH",
     title: "导学号学习灯 × 导学管家",
     description: "连接学生使用的智能学习设备与家长端 App，串联错题采集、智能诊断、学习记录与家校沟通。",
