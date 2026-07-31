@@ -86,7 +86,6 @@ export default function ProjectImageLightbox() {
         <button type="button" onClick={close} aria-label="关闭图片查看器">关闭 ×</button>
       </div>
 
-      <button className="project-lightbox-nav is-previous" type="button" onClick={showPrevious} aria-label="查看上一张图片">←</button>
       <figure
         key={activeIndex}
         className={`is-${transitionDirection}`}
@@ -105,7 +104,6 @@ export default function ProjectImageLightbox() {
         <img src={activeImage.src} alt={activeImage.alt} />
         {activeImage.alt && <figcaption>{activeImage.alt}</figcaption>}
       </figure>
-      <button className="project-lightbox-nav is-next" type="button" onClick={showNext} aria-label="查看下一张图片">→</button>
     </div>
   );
 }

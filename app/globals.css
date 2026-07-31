@@ -1714,9 +1714,9 @@ a {
   z-index: 1000;
   position: fixed;
   inset: 0;
-  padding: 64px 92px 54px;
+  padding: 42px 44px 32px;
   display: grid;
-  grid-template-columns: 58px minmax(0, 1fr) 58px;
+  grid-template-columns: minmax(0, 1fr);
   grid-template-rows: auto minmax(0, 1fr);
   align-items: center;
   gap: 18px;
@@ -1735,8 +1735,7 @@ a {
   letter-spacing: .1em;
 }
 
-.project-lightbox-bar button,
-.project-lightbox-nav {
+.project-lightbox-bar button {
   border: 1px solid rgba(255, 255, 255, .28);
   color: inherit;
   background: rgba(255, 255, 255, .06);
@@ -1752,22 +1751,10 @@ a {
 }
 
 .project-lightbox-bar button:hover,
-.project-lightbox-nav:hover {
+.project-lightbox-bar button:focus-visible {
   border-color: rgba(255, 255, 255, .7);
   background: rgba(255, 255, 255, .14);
 }
-
-.project-lightbox-nav {
-  width: 48px;
-  height: 48px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  font-size: 22px;
-}
-
-.project-lightbox-nav:hover { transform: scale(1.05); }
 
 .project-lightbox figure {
   min-width: 0;
@@ -1795,7 +1782,7 @@ a {
 
 .project-lightbox figure img {
   max-width: 100%;
-  max-height: calc(100svh - 150px);
+  max-height: calc(100svh - 112px);
   width: auto;
   height: auto;
   display: block;
@@ -2140,27 +2127,18 @@ a {
 
   .project-lightbox {
     padding: 18px 14px 26px;
-    grid-template-columns: 48px minmax(0, 1fr) 48px;
-    grid-template-rows: auto minmax(0, 1fr) auto;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: auto minmax(0, 1fr);
     gap: 10px;
   }
 
   .project-lightbox figure {
-    grid-column: 1 / -1;
+    grid-column: 1;
   }
 
   .project-lightbox figure img {
-    max-height: calc(100svh - 160px);
+    max-height: calc(100svh - 104px);
   }
-
-  .project-lightbox-nav {
-    grid-row: 3;
-    width: 44px;
-    height: 44px;
-  }
-
-  .project-lightbox-nav.is-previous { grid-column: 1; }
-  .project-lightbox-nav.is-next { grid-column: 3; }
 
   .project-lightbox figcaption {
     max-width: calc(100vw - 28px);
