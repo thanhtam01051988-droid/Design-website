@@ -92,7 +92,7 @@ export default function SmartOfficeProject() {
         ))}
         <footer className="case-footer">
           <a href={sitePath("/#work")}>← 返回所有项目</a>
-          <div><small>NEXT PROJECT</small><a href={sitePath("/#project-02")}>大学项目申报管理系统 ↗</a></div>
+          <div><small>NEXT PROJECT</small><a href={sitePath("/projects/project-application/")}>大学项目申报管理系统 ↗</a></div>
           <ProjectSwitcher current="01" />
         </footer>
       </div>

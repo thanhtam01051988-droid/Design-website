@@ -68,7 +68,7 @@ const projects = [
   },
   {
     index: "02",
-    href: null,
+    href: "/projects/project-application",
     type: "B-END / PROJECT MANAGEMENT",
     title: "大学项目申报管理系统",
     description: "通过信息化手段改善学校项目库过度依赖人工、信息孤岛、沟通不畅与进度难跟踪的问题。",
