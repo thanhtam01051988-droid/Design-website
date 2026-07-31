@@ -1,21 +1,23 @@
+import { BadgeCheck, PanelsTopLeft, UsersRound, Workflow } from "lucide-react";
+
 const capabilities = [
   {
-    icon: "▣",
+    icon: <PanelsTopLeft aria-hidden="true" size={21} strokeWidth={1.7} />,
     title: "多端经验",
     description: "具备 App、小程序、Web 与 B 端系统设计经验，熟悉不同平台规范与复杂业务场景。",
   },
   {
-    icon: "⌁",
+    icon: <Workflow aria-hidden="true" size={21} strokeWidth={1.7} />,
     title: "交互思维",
     description: "从用户需求和业务目标出发梳理信息架构、交互路径与关键状态，并借助 AI 提升方案迭代效率。",
   },
   {
-    icon: "✦",
+    icon: <BadgeCheck aria-hidden="true" size={21} strokeWidth={1.7} />,
     title: "设计落地",
     description: "覆盖视觉方案、组件规范、原型与高保真交付，持续跟进开发效果、测试验收和体验优化。",
   },
   {
-    icon: "◎",
+    icon: <UsersRound aria-hidden="true" size={21} strokeWidth={1.7} />,
     title: "协同推进",
     description: "与产品、前端和测试团队持续协作，通过设计评审、进度跟进与问题闭环推动方案上线。",
   },
@@ -193,9 +195,9 @@ export default function Home() {
           <p>C-END · B-END<br />BRAND VISUAL</p>
         </div>
         <div className="project-category-summary">
-          <div><small>C 端项目 / 03</small><strong>城投智慧办公<br />导学号与导学管家<br />宏光照明小程序</strong></div>
-          <div><small>B 端项目 / 02</small><strong>大学项目申报系统<br />宏光照明官网</strong></div>
-          <div><small>品牌视觉 / 01</small><strong>品宣·运营</strong></div>
+          <div className="category-card category-c"><small>C 端项目 / 03</small><strong>城投智慧办公<br />导学号与导学管家<br />宏光照明小程序</strong></div>
+          <div className="category-card category-b"><small>B 端项目 / 02</small><strong>大学项目申报系统<br />宏光照明官网</strong></div>
+          <div className="category-card category-brand"><small>品牌视觉 / 01</small><strong>品宣·运营</strong></div>
         </div>
         <div className="resume-project-grid">
           {projects.map((project) => (
@@ -211,13 +213,6 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="site-footer section-shell">
-        <div>
-          <p className="eyebrow">LET&apos;S MAKE SOMETHING MEANINGFUL</p>
-          <h2>有合适的设计机会？<br /><a href="mailto:18729335669@163.com">一起聊聊。↗</a></h2>
-        </div>
-        <div className="footer-meta"><span>XI&apos;AN · CHINA</span><span>© 2026 XU YUEYUE</span></div>
-      </footer>
     </main>
   );
 }
