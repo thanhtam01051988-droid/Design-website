@@ -109,41 +109,34 @@ export default function Home() {
 
       <section className="hero section-shell" id="home">
         <div className="hero-copy">
-          <p className="eyebrow">UI / UX DESIGNER · SHANGHAI</p>
-          <h1>
-            你好，我是林墨。
-            <br />
-            我设计<span className="underlined">清晰</span>、
-            <br />
-            有温度的数字体验。
-          </h1>
-          <div className="hero-bottom">
-            <p>
-              专注复杂产品与设计系统，
-              <br />
-              相信好设计始于理解，成于细节。
-            </p>
-            <a className="text-link" href="#work">
-              浏览作品 <span>↘</span>
-            </a>
+          <p className="hero-kicker">UI DESIGNER / PRODUCT EXPERIENCE</p>
+          <div className="hero-title" aria-label="林墨 UI Designer">
+            <h1>林墨</h1>
+            <p>UI DESIGNER</p>
+          </div>
+          <p className="hero-intro">
+            我关注复杂业务里的清晰表达，把信息架构、交互路径和视觉系统
+            整理成可落地、可复用、可持续迭代的产品体验。
+          </p>
+          <div className="hero-actions">
+            <a className="primary-action" href="#work">查看项目 <span>↗</span></a>
+            <a className="secondary-action" href="#about"><span className="doc-icon">▤</span> 简历入口</a>
+          </div>
+          <div className="hero-principles" aria-label="核心设计能力">
+            <div><small>FOCUS</small><strong>业务体验</strong></div>
+            <div><small>METHOD</small><strong>系统化设计</strong></div>
+            <div><small>OUTPUT</small><strong>高保真交付</strong></div>
           </div>
         </div>
 
         <div className="portrait-wrap">
           <div className="portrait">
             <div className="portrait-image" role="img" aria-label="UI 设计师林墨的个人形象照片" />
-            <span className="portrait-index">PORTRAIT / 2026</span>
-            <span className="portrait-mark">+</span>
+            <span className="portrait-frame" />
+            <span className="portrait-folio">PORTFOLIO / 2026</span>
+            <span className="portrait-mark">✦</span>
+            <span className="portrait-status">Available for selected design work <b>✧</b></span>
           </div>
-          <div className="portrait-caption">
-            <span>BASED IN SHANGHAI</span>
-            <span>31.2304° N<br />121.4737° E</span>
-          </div>
-        </div>
-
-        <div className="scroll-cue">
-          <span>SCROLL TO EXPLORE</span>
-          <i />
         </div>
       </section>
 
