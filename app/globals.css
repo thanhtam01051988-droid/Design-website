@@ -2618,3 +2618,173 @@ a {
     min-height: 300px;
   }
 }
+
+/* Portfolio access gate */
+.password-gate {
+  min-height: 100svh;
+  padding: 30px 40px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  color: #171816;
+  background:
+    linear-gradient(rgba(23, 24, 22, .035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(23, 24, 22, .035) 1px, transparent 1px),
+    #f3f3f0;
+  background-size: 72px 72px;
+}
+
+.password-gate-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.password-gate-brand > span {
+  width: 46px;
+  height: 46px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #fff;
+  background: #171816;
+  font-size: 12px;
+  font-weight: 650;
+}
+
+.password-gate-brand div,
+.password-gate-brand strong,
+.password-gate-brand small {
+  display: block;
+}
+
+.password-gate-brand strong {
+  font-size: 14px;
+  font-weight: 650;
+}
+
+.password-gate-brand small {
+  margin-top: 3px;
+  color: #777872;
+  font: 8px/1 var(--font-geist-mono), monospace;
+  letter-spacing: .1em;
+}
+
+.password-gate-panel {
+  width: min(100%, 760px);
+  margin: auto;
+  padding: clamp(34px, 5vw, 64px);
+  border: 1px solid rgba(23, 24, 22, .14);
+  background: rgba(255, 255, 255, .72);
+  box-shadow: 0 30px 90px rgba(23, 24, 22, .07);
+  backdrop-filter: blur(18px);
+}
+
+.password-gate-panel > p:first-child {
+  margin: 0 0 30px;
+  color: #777872;
+  font: 9px/1 var(--font-geist-mono), monospace;
+  letter-spacing: .12em;
+}
+
+.password-gate-panel h1 {
+  margin: 0;
+  font-size: clamp(48px, 7vw, 86px);
+  line-height: .95;
+  letter-spacing: -.065em;
+  font-weight: 580;
+}
+
+.password-gate-copy {
+  margin: 28px 0 38px;
+  color: #666761;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.password-gate form label {
+  display: block;
+  margin-bottom: 10px;
+  color: #777872;
+  font: 9px/1 var(--font-geist-mono), monospace;
+  letter-spacing: .1em;
+}
+
+.password-gate form > div {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.password-gate input,
+.password-gate button {
+  min-height: 54px;
+  border: 1px solid #171816;
+  font: inherit;
+}
+
+.password-gate input {
+  min-width: 0;
+  padding: 0 18px;
+  border-right: 0;
+  outline: none;
+  background: transparent;
+}
+
+.password-gate input:focus {
+  box-shadow: inset 0 0 0 2px #171816;
+}
+
+.password-gate input[aria-invalid="true"] {
+  border-color: #c13b32;
+  box-shadow: inset 0 0 0 1px #c13b32;
+}
+
+.password-gate button {
+  padding: 0 22px;
+  color: #fff;
+  background: #171816;
+  cursor: pointer;
+}
+
+.password-gate button span { margin-left: 14px; }
+
+.password-gate form > p {
+  margin: 10px 0 0;
+  color: #b2342c;
+  font-size: 12px;
+}
+
+.password-gate > footer {
+  display: flex;
+  justify-content: space-between;
+  color: #8a8b85;
+  font: 8px/1 var(--font-geist-mono), monospace;
+  letter-spacing: .12em;
+}
+
+@media (max-width: 600px) {
+  .password-gate {
+    padding: 20px;
+    background-size: 48px 48px;
+  }
+
+  .password-gate-panel {
+    padding: 30px 22px;
+  }
+
+  .password-gate-panel h1 {
+    font-size: 52px;
+  }
+
+  .password-gate form > div {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .password-gate input {
+    border-right: 1px solid #171816;
+  }
+
+  .password-gate > footer span:first-child { display: none; }
+  .password-gate > footer { justify-content: flex-end; }
+}
